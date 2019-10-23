@@ -1,0 +1,105 @@
+body{
+
+  /* اتجاه الكتابة يعتمد على اتجاه الصفحة عند بداية تكويد الصفحة
+  En ==> ltr تغير اتجاه الكتابة لكامل الصفحة من اليسار لليمين
+  Ar ==> rtl تغير اتجاه الكتابة لكامل الصفحة من اليمين الى اليسار
+  ونستطيع تغير اتجاه النص باي شكل نريد عن طريق خاصية  */
+  direction:ltr;
+
+  /* ملاحظة : نستطيع استخدام الداريكشن في اي كلاس اودف لتنسيق المحتوى
+  في حالة كان المحتوى انكليزي وتم تغير اتجاه النص للعربي لتفادي اي مشكلة */
+}
+div{
+  /* div proprties */
+  width: 300px;
+  background: #DDD;
+  margin: 10px;
+  padding: 10px;
+  text-align: left;
+  /* div proprties */
+
+  /* Text proprties */
+
+/* بالنسبة لكتابة كود الالوان بالهكسادسمل يتكون من 6 خانات اذا تشابه فيها
+حرفين او رقمي نستعيض عنهم بحرف او رقم واحد مثلا
+# DD 00 FF -> = # D0F ;
+ونقيس على  ذلك لاختصارالكود جهد الامكان */
+color:#00F;
+
+/* التحكم بالمسافات بين الحروف يكون عن طريق خاصية */
+/* letter-spacing:15px; */
+letter-spacing: normal;
+
+/* للتحكم في ارتفاع الخطوط الكتابة عن طريق  */
+line-height:60Px;
+/* لنفترض ان سبة ارتفاع النص قيمة تساوي
+x = 50 ->200%=100 || x=25 ->150% = 75  */
+line-height: 400%;
+line-height: 2em;
+line-height: normal;
+
+/* توجد طريقة للتحكم باتجاه نص معين او ترتيب ذللك النص من خلال */
+ /* text-align: center;
+ text-align: left;
+ text-align: right;
+ text-align: justify;    /*لتنسيق اسطر النص بنفس الطول*/ */
+}
+div.arb{
+  /* direction: rtl; */
+  /* تحويل مسار الكتابة من اليمنين الى اليسار فقط لهذا الكلاس */
+/* direction: rtl; */
+text-align: right;
+
+
+/* Text proprties */
+
+}
+div.decor,a{
+  /*تنسيق الديكور للتيكست*/
+  /*لوضع خط تحت الكتابة*/
+  text-decoration:underline;
+  /*ولضع خط فوق الكتابة*/
+  text-decoration: overline;
+  /*لشطب اي كلمة او جملة نستخدم*/
+  text-decoration: line-through;
+  /*القيمة الافتراضية للديكوريشن وتعني لا يوجد ديكور */
+  text-decoration: none;
+  /*لترك مساحة قبل بداية التكست نستخدم*/
+  text-indent: 100px;   /*لترك مساحة مقدارها محسوب بالبكسل*/
+  text-indent: 50%;     /*لترك مساحة بمقدار بالمائة من عرض التكست*/
+}
+span.deco{
+  color: #F00;
+  text-decoration: line-through;
+}
+a:hover   /*ويقصد بها عند الوقوف بالماوس على اللنك يقوم بتنفيذهذا التنسيق*/
+{
+color: #F00;
+text-decoration: underline;
+}
+/* لتغير اشكار الاحرف من حروف صغيرة الى كبيرة وبالعكس نستخدم */
+span.tr{
+  text-decoration: none;
+  text-transform: capitalize;  /*لتحويل اول حرف من كل كلمة الى حرف كبير*/
+}
+span.upper{
+  text-decoration: none;
+  text-transform: uppercase; /*لتحويل جميع احرف التيكست الى حروف كبيرة*/
+  text-transform: lowercase; /*لتحويل جميع حروف التكست الى حروف صغيرة*/
+  text-transform: none; /*لاجاع النص للديفلت*/
+  color: #F00;
+}
+.whitespace{
+  /* ستكون الكتابة ضمن حدود الدف اي حسب العرض الذي نحدده واذا زاد ينزل سطر جديد */
+  white-space: nomal;
+  /* في هذه الحالة سوف نلغي الحدود وسيخرج النص عن حدود الف */
+  /* ملاحظة لاتطبق الا بحالة كل كلمة مفصولة عن الثانية والا سوف تنزل سطر عادي */
+   white-space: nowrap;
+
+}
+.word_spacing{
+  word-spacing: 30px;
+}
+.letter_spacing{
+  letter-spacing: 10px;
+}

@@ -1,0 +1,43 @@
+/* @media screen  /*هنا الملف موجه للشاشات ولا يظهر التنسيق بالطباعة*/ */
+@media print /*هنا ملف الستايل يكون موجه للطباعة فقط ولا يظهر التنسيق
+على الشاشات*/
+{
+
+/* للتحكم بخواص العناصر عن طريق استدعاء خاصية العناصر
+وبالتالي يكون تحديد العنصر اكثر دقة وكما يلي */
+
+a[target="_blank"]{ /*هنا نقول العنصر ذو الخاصية نيو بلانك اعمل عليه ما يلي*/
+
+  color:#F00;
+  text-decoration: none;
+}
+/*نقول للعنصر الذي يحمل خاصية تايتل لنك2 و ازفوريو اعمل له مايلي*/
+a[title="link2"],[title="azforu"]{
+  color:#080;
+}
+img{
+  width: 100px;
+  height:100px;
+  margin: 10px;
+}
+img[title="this is image"]{
+  border-radius: 15px;
+}
+input{
+  display: block;
+  margin:10px 0;
+  padding: 5px;
+}
+input[type="search"]{
+  width: 300px;
+  color: #080;
+  background-color: #DDD;
+}
+input[type="text"]{
+  color:#F00;
+}
+p{
+  font-size: 40px;
+  color: #F00;
+}
+}

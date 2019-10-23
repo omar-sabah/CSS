@@ -1,0 +1,39 @@
+/* القيمة الافتراضية للعرض هي اوتو اي بعرض الصفحة او العنصر الرئيسي */
+.width{
+  background: #DDD;
+  width:600px;
+}
+.child{
+  margin-bottom: 10px;
+  background: #00F;
+  color:#FFF;
+  /* width: 500px; */
+  /*تحديد مقدار العرض كاقل قيمة واعلى قيمة للعنصر
+  ويفيد هذا الاجراء في عدم السماح لعرض اي عنصر
+  بالتجاوز عن اقل عرض او اعلى عرض نحن نحدده للعنصر
+  وبالتالي يتم السيطرة على عرض اي عنصر داخل الصفحة
+  يتم اعطاء قيم العرض للعنصر اما عن طريق مقدار
+  البكسل او النسبة المؤية وكما يلي*/
+  min-width: 20px;
+  max-width: 50px;
+}
+.bt1{
+  background: #F00;
+  color: #FFF;
+  margin-bottom: 5px;
+  min-width: 50%;
+}
+/* button{
+margin:10px;
+min-width: 200px;
+} */
+/*نفس الكلام السابق لتحديد الطول لاي عنصر*/
+.height{
+  background: #DDD;
+  width: 100px;
+  min-height: 20px;
+  max-height: 100px;
+  float:left;
+  margin-right: 20px;
+  overflow: auto;
+}

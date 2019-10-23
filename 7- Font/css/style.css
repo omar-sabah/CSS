@@ -1,0 +1,76 @@
+body{
+  height:2500px;
+}
+.workbox{
+  width: 700px;
+  height: 600px;
+  /* background: #FFF000 url('../image/css3_2.png') no-repeat fixed 10% 10%; */
+  background-color: #DDD;
+  /* يجب اختيار خطوط امنه للموقع بحيث تعمل على جميع المواقع
+  ويتم ذلك عن طريق البحث في موقع غوغل عن
+  seve font
+  او نقوم بادراج خط الموقع ضمن ملفات الموقع وسوف ندرسها بوقت لاحق */
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 24px;
+}
+.workbox:hover{
+  box-shadow: 0 0 20px #777;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+h3{
+  text-align: center;
+}
+.p1{
+
+  text-align: right;
+  margin-right: 5px;
+
+}
+.p2,.p3{
+  font-size: 24px;
+  text-align: left;
+
+}
+.p4{
+  font-style: normal;
+}
+.p5{
+  font-style: italic;
+}
+.p6{
+  font-style: oblique;
+}
+.p7{
+  /* ملاحظه:عندما نريد تغير حجم الخط لاي جملة يجب ارجاع قيمة الفونت
+  ستايل لها الى النورمال ومن ثم تغير حجم الخط
+*/
+  font-size: 30px;
+}
+.p8{
+  /* القمية الافتراضية لحجم الخط */
+  /* 16px; */
+  font-size: 150%;
+  font-size: 1.5em;
+}
+.weight1{
+  font-weight: bold;
+}
+.weight2{
+  font-weight: bolder;
+}
+.weight3{
+  font-weight: lighter;
+}
+.weight4{
+  font-weight: normal;
+}
+.weight5{
+  font-weight:900;
+}
+.weight6{
+}
+.weight7{
+  /* font:font-style  font-size/line-height  font-family */
+  font: italic bold 30px/40px  Arial;
+}

@@ -1,0 +1,50 @@
+p{
+  text-align: justify;
+}
+.p1:first-letter{
+  display:block;
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: #F00;
+  color:#FFF;
+  padding: 2px;
+  margin:0px 5px;
+  border-radius: 5px;
+}
+
+.p1:first-line{
+  color: #00F;
+}
+
+  /*اول بارغراف من الكسلاس 1 طبق عليه التالي*/
+.class1 p:first-child{
+  background: #F00;
+  color:#FFF;
+}
+span{
+  display: block;
+}
+.class1 p:first-child span:first-child{
+  background: #DDD;
+  color:#000;
+  margin: 5px 0;
+  padding: 10px;
+  outline: 3px solid #00F;
+}
+.final{
+  padding: 10px;
+  margin: 10px;
+}
+.final::before
+{ content: "This is content statment";
+  color:#F00;
+  font-size: 20px;
+  font-weight:bold;
+}
+.final::after
+{ content: "This is content statment";
+  color:#00F;
+  font-size: 20px;
+  font-weight:bold;
+}

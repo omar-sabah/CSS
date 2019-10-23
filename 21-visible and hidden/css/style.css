@@ -1,0 +1,14 @@
+div{
+  width: 300px;
+  background: #DDD;
+  padding: 10px;
+  margin: 10px;
+  float: left;
+}
+div.visible{
+  /* display: none; /*في هذه الحالة العنصر يختفي ويأتي عنصر مكانه*/ */
+  visibility: visible; /*القيمة الافتراضية العنصر يظهر*/
+  visibility: hidden; /*العنصر يختفي ويبقى مكانه فراغ بالتصميم*/
+  /* وبهذا عرفنا الفرق بين  */
+  /* display: none      &  visibility:hidden */
+}

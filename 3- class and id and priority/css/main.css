@@ -1,0 +1,14 @@
+p{
+  color:#F00;
+  font-size: 15px;
+}
+
+.one{
+  color:blue;
+  font-size: 50px;
+}
+.one{
+  background: #DDD;
+}
+/* one ينظر للاستدعائين
+على انهم ملف واحد */

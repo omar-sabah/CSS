@@ -1,0 +1,68 @@
+ .header{
+
+   /* background-color: هنا سوف نضع قيمة اللون المناسب وسيكون ادخال القيمة عن طريق
+   1 - ادخال اسم اللون وسيكون red,blue,white ....;
+   2 - عن طريقة ادخال كود الهكسا للون # DDEE11;
+   3 - عن طريق ادخال قيمة كل لون rgb(ازرق ،اخضر ، احمر)
+          rgb (255,15,17);
+   4 - نفس الفقرة 3 مضاف اليها اوباستي للون من الغامق الى الفاتح
+          الغامق = 1 ، الفاتح = 0 نضع قيمة عشرية بين الصفر والواحد
+          تمثل شدة اللون وتكون الصيغة
+          rgba(255,80,34,0.4); */
+    background-color: red;
+    background-color: #E67A12;
+    background-color: rgb(61,115,9);
+    background-color: rgb(61,115,9,0.5);
+    /* ملاحظة الديفلت فاليو للقيمة يكون ترانسبيرنس شفاف في حالة عدم كتابته */
+    text-align: center;
+ }
+.content{
+  /* عند وضع الصورة كخلفية سنلاحظ
+  1- سيتم تكرار الصورة  على طول الصفحة
+  2- عند الوصول لملف الصورة يجب حساب كمل تبعد الصورة عن ملف الستايل
+  كم خطوة في كل خطوة نعوض عنها بنقطة نكتبها في بداية الامتداد
+  في مثالنا الحالي ونحن في ملف
+  style
+  والصورة في لملف
+  CSS
+  نخرج من ملف الستايل نضع بنقطة
+  وندخل ملف image
+  نضع نقطة اخرى ثم نكتب اسم الصورة والامتداد فتكون الصيغة
+  ../امتداد الصورة */
+  background-image: url("../image/css3_2.png");
+  width: 500px;
+  height: 500px;
+  border:1px solid #000;
+  للتحكم في تكرار الصورة على المحورين العامودي والذي يمثل y
+  والافقي الذي يمثل x
+  background-repeat:repeat-y; /*تكرار الصورة على المحور العمودي y */
+  background-repeat: repeat-x; /*تكرار الصورة على المحور الافقي x*/
+  background-repeat:repeat;/*تكرار الصورة افقي وعامودي*/
+  background-repeat:no-repeat; /*عدم التكرار نهائيا*/
+  /* للتحكم في صورة الخلفية من ناحية الثبات او سكرول */
+  background-attachment: fixed; /*الصورة في وضع الثبات*/
+  background-attachment:scroll; /*تتحرك الصورة في حالة عمل سكرول للموقع*/
+  /* للتحكم في موقع الخلفية يكون عن طريق */
+  background-position: center top;
+  background-position: center left;
+  background-position: center right;
+  background-position: top left;
+  background-position: top center;
+  background-position: top right;
+  background-position: center center;
+  background-position: bottom left;
+  background-position: bottom center;
+  background-position: bottom right;
+  background-position: 0% 0%; /*القيمةالافتراضية للمحورين الافقي والعامودي x,y*/
+  /* للتحريك حسب المحاور حسب الرغبة للاعلى او الاسفل يمين او يسار */
+  background-position: 70% 80%;
+  background-position: 10% 90%;
+
+  /* الان وبعد شرح كل خواص الباكراوند نستطيع جمعها بسطر واحد واعطاء القيم لها وكما القيمةالافتراضية
+  background: (color value) (image value) (repeat value) (attachment value) (position value) ; */
+
+background: #FFF000 url('../image/css3_2.png') no-repeat scroll 50% 50%;
+
+
+
+}

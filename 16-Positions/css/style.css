@@ -1,0 +1,79 @@
+body{
+  font-family: Arial,Tahoma,serif;
+  background-color: #DDD;
+  height: 3000px;
+}
+.fixed{
+
+  background: #080;
+  color: #FFF;
+  padding: 10px;
+  /*هنا شرج الموقع الثابت اي لا يتحرك مع الصفحة
+  يستخدم عندما نريد اضافة وسائل التواصل الاجتماعي
+  للصفحة تبقى ثابتت الظهور بالرغم من التنقل في الموقع
+  وعندما نغير فيها موقع العنصر يختفي المكان المحجوز للعنصر وتحل مكانه
+  عناصر اخرى*/
+  position: fixed;
+  /* ونغير موقع العنصر بالاتجاهات */
+  /* ويستخدم عندما نفتح بوكس المحادثة مع المواقع */
+left:100px;
+top: 5%;
+}
+/* هنا الرلتف المرجعية ويعبر عن نفسة يكون مرجع او اب
+لعناصر اخرى وعند تحريكه من مكانه سوف يحجز المكان الفراغ
+ولا يسمح لعنصر اخر ان ياخذ مكانه */
+.relative{
+  background: #F00;
+  color: #FFF;
+  padding: 10px;
+  position: relative;
+  bottom: 10px;
+ /* left: 200px; */
+}
+.parent{
+  position: relative;
+  width: 1300px;
+  background: #FFF;
+  height: 600px;
+  margin:auto;
+
+}
+.center{
+  /* حتى يدخل باقرب رلتف ليصبح الاب له وفي حالتنا هنا البيرنت
+  واذا لم يكن سبحث في الخارج وهكذا */
+  background: #00F;
+  color : #FFF;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+
+
+}
+div .div1{
+  width: 200px;
+  height:200px;
+  background: #0F0;
+  margin-left: 5px;
+  padding: 5px;
+  display: inline-block;
+
+}
+div .div2{
+  width: 700px;
+  height:200px;
+  background: #FF0;
+  margin-left: 5px;
+  padding: 5px;
+  display: inline-block;
+}
+div .div3{
+  width: 200px;
+  height:200px;
+  background: #FF0;
+  margin-left: 5px;
+  padding: 5px;
+  display: inline-block;
+}

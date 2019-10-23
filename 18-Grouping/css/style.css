@@ -1,0 +1,23 @@
+.one,.two,.three{
+  /* عندما اريد مثلا تغير لون الخط لجميع الدفات
+  فقط اغير قيمة اللون من خاصية الكولور هنا
+  سيتغير جميع اللوان الكتابة في جميع الدفات */
+  color: #FFF;
+  font-weight: bolder;
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  float: left;
+}
+.one{
+  background: #F00;
+}
+.two{
+  background: #00F;
+  /* هذه الخاصية تطغى على الخاصية الفوق */
+  float: right;
+}
+.three{
+  background: #080;
+}

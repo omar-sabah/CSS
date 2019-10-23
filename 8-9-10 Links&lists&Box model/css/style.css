@@ -1,0 +1,65 @@
+body{
+  background-color: #EDEDED;
+}
+.container{
+  /* display:inline-flex; */
+  /* margin-left: 500px; */
+  width: 1000px;
+  height:2500px;
+  margin: 10px auto;
+  padding: 10px;
+  border: 2px solid #000;
+  text-align: center;
+  /* background-color: #F00; */
+}
+h1{
+  color: #1495B7;
+}
+.links,.lists,.boxmodel{
+  padding: 10px;
+  margin: 10px;
+  background-color: #FFF;
+  width: 300px;
+  height: 300px
+}
+/* .links{
+  padding: 10px;
+} */
+h4{
+  color: blue;
+  text-align: center;
+}
+a{
+  font-size: 18px;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #F00;
+  font-style: italic;
+  font-size: 2em;
+  text-decoration:line-through;
+  /* line-height: 50px; */
+}
+
+a:active{
+  color: #080;
+  font-size: 1.5em;
+  text-decoration: none;
+  /* line-height: 50px; */
+}
+
+ul li{
+  border:1px solid #DDD;
+}
+ul{
+  /* list-style-type: none; /*لالغاء اي علامة قبل الليست*/ */
+   list-style-type: disc;/*هذه القيمة الافتراضية*/
+  list-style-image: url(../image/star.png); /*في حالة ادراج صورة بدل الرمز*/
+list-style-position: inside;/*الديفلت اوت سايد ونستطيع ادخال الست انسايد في هذا الايعاز*/
+/* نستطيع اختصار الايعازات بسطر واحد */
+list-style: disc outside none;
+list-style:circle inside none;
+list-style: disc inside url(../image/star.png);
+
+}

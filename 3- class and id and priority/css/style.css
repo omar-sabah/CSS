@@ -1,0 +1,21 @@
+/* هذا الملف له الاولية على ملف المين بتنفيذا الستايل */
+body{
+  font-family:Arial,Tahoma,serif;
+}
+.one{
+  color:#0F0;
+  font-size: 75px;
+}
+.two{
+  color:blue;
+  font-size: 50px;
+}
+
+#foure{
+  color:#0CF;
+  font-size: 50px;
+}
+#five{
+  color:#F00;
+  font-size: 80px;
+}
